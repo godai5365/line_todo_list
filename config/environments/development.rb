@@ -1,6 +1,9 @@
 require "active_support/core_ext/integer/time"
 
 Rails.application.configure do
+    # ngrok を立ち上げた際に発行される URL のドメイン部分（https:// 以降)を以下のように記載する
+    config.hosts = ["f407-122-255-253-179.ngrok.io", "localhost"]
+
   # Settings specified here will take precedence over those in config/application.rb.
 
   # In the development environment your application's code is reloaded any time
